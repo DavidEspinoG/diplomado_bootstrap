@@ -21,3 +21,6 @@
     text-decoration: none;
     display: inline-block;
 }
+.hamburger-menu {
+    height: 45px;
+}

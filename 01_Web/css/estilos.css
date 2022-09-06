@@ -14,12 +14,14 @@
 }
 .enlaces a, div{
     text-align: center;
-    margin-bottom: 10px ;
+
 }
+
 .enlaces a {
     color: rgb(140, 140, 140);
     text-decoration: none;
     display: inline-block;
+    font-size: 20px;
 }
 .hamburger-menu {
     height: 45px;

@@ -234,8 +234,26 @@
                 </svg> Agregar </a>
             </div>
         </div> 
-    
+        <div class="container my-5 py-3">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled" id="pager-left">
+                    <a class="page-link" href="#">
+                        <span>&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" id="page-1" href="index.html">1</a></li>
+                <li class="page-item"><a class="page-link" id="page-2" href="./pageTwo.html">2</a></li>
+                <li class="page-item"><a class="page-link" id="page-3" href="pageThree.html">3</a></li>
+                <li class="page-item"><a class="page-link" id="page-4" href="pageFour.html">4</a></li>
+                <li class="page-item" id="pager-right">
+                    <a class="page-link" href="#">
+                        <span>&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     <script>
+        // Toogle .show
         const menu = document.querySelector('#collapse-menu');
         const width = window.innerWidth;
         if (width >= 576) {
@@ -250,6 +268,17 @@
             }
         })
         
+        // Pagination
+        const pagerLeft = document.getElementById('pager-left')
+        const page1 = document.getElementById('page-1')
+        const page2 = document.getElementById('page-2')
+        const page3 = document.getElementById('page-3')
+        const page4 = document.getElementById('page-4')
+        const pagerRight= document.getElementById('pager-right')
+
+        page1.addEventListener('click', () => {
+            page1.classList.toggle('active')
+        })
     </script>
 </body>
 </html>

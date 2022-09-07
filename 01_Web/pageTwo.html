@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Webstore</title>
+</head>
+<body>
+    <div class="cabecera container-fluid d-flex  flex-column flex-sm-row align-content-center justify-content-sm-between p-5 text-center align-content-sm-center mb-0 ">
+        <img class="w-25" src="./img/logo_light.png" alt="" style="align-self: center;">
+        <div class="d-flex flex-column justify-content-center">
+            <h1 class="display-1 text-white">Webstore</h1>
+            <p class="display-6 text-white">Encuentra la mejor tecnología</p>
+        </div>
+    </div>
+    <div class="navegacion bg-dark p-2 sticky-top">
+        <div class="d-flex justify-content-between mb-0">
+            <img src="./img/logo_light.png" alt="logo" >
+            <div class="enlaces container collapse d-sm-flex flex-sm-column justify-content-sm-center" id="collapse-menu">
+                <div class="d-flex flex-column flex-sm-row align-content-sm-center justify-content-sm-between justify-content-center mb-0">
+                    <div class="d-flex flex-column flex-sm-row justify-content-sm-evenly gap-sm-3 align-content-sm-center">
+                        <a href="">Inicio</a> 
+                        <a href="">Catálogo</a>
+                        <div class="dropdown mb-0">
+                            <a href="" class="dropdown-toggle" data-bs-toggle="dropdown">Categorías</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">CPU</a></li>
+                                <li><a class="dropdown-item">RAM</a></li>
+                                <li><a class="dropdown-item">Tarjetas gráficas</a></li>
+                                <li><a class="dropdown-item">Placas base</a></li>
+                                <li><a class="dropdown-item">Gabinetes</a></li>
+                                <li><a class="dropdown-item">Fuentes de poder</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-sm-3">
+                        <a href="">Registrarse</a>
+                        <a href="">Iniciar sesión</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="hamburger-menu d-flex flex-column justify-content-center border border-1 p-1 rounded d-sm-none">
+                <i class="fa-solid fa-bars fa-2x " data-bs-toggle="collapse" href="#collapse-menu"></i>
+            </div>
+        </div>
+        
+          
+    </div>
+    <div class="container-fluid shadow mb-5">
+        <h1 class="titulo-productos">Productos destacados</h1>
+    </div>
+        <div class="container  gap-3 justify-content-md-center flex-wrap d-flex flex-md-row flex-column align-items-center">
+            <div class="card mb-3 shadow" style="width: 288px;">
+                <div class="img-container">
+                    <img src="./img/cpu1.png" class="card-img-top w-75 mx-auto" alt="CPU">
+                </div>
+                
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">CPU Intel Xeon </h5>
+                    <p class="card-text">Dos nucleos a 3.2 GHz</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/cpu2.png" class="card-img-top w-75 mx-auto" alt="CPU">
+                </div>
+                
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">CPU AMD Ryzen 5 </h5>
+                    <p class="card-text">6 nucleos 12 hilos 3.8 GHz</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/cpu3.png" class="card-img-top w-75 mx-auto" alt="CPU">
+                </div>
+                
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">CPU Intel Xeon </h5>
+                    <p class="card-text">1 nucleo 12 hilos 2.8 GHz</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/cpu4.png" class="card-img-top w-75 mx-auto" alt="CPU">
+                </div>
+                
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">CPU Intel I9 </h5>
+                    <p class="card-text"> 8 nucleos 16 hilos 4.8 GHz</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/g1.png" class="card-img-top w-75 mx-auto" alt="Gabinetes">
+                </div>
+                
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">Gabinete LED </h5>
+                    <p class="card-text">Gabinete con luz LED azul</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/g2.png" class="card-img-top w-75 mx-auto" alt="CPU">
+                </div>
+                
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">Gabinete Basico</h5>
+                    <p class="card-text">Gabinete Basico en Negro</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/g4.png" class="card-img-top w-75 mx-auto" alt="Gabinetes">
+                </div>
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">Gabinete Yerian </h5>
+                    <p class="card-text">Gabinete Negro Yerian</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/gc1.png" class="card-img-top w-75 mx-auto" alt="Gabinetes">
+                </div>
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">GTX 1650</h5>
+                    <p class="card-text">GEFORCE GTX 1650 4GB</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/gc2.png" class="card-img-top w-75 mx-auto" alt="Gabinetes">
+                </div>
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">RTX 3060 </h5>
+                    <p class="card-text">GEFORCE RTX 3060 12GB</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/gc3.png" class="card-img-top w-75 mx-auto" alt="Gabinetes">
+                </div>
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">RX 6600</h5>
+                    <p class="card-text">AMD RADEON RX 6600 8GB</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/gc4.png" class="card-img-top w-75 mx-auto" alt="Gabinetes">
+                </div>
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">RTX 3060 </h5>
+                    <p class="card-text">ROG GEFORCE GTX 3060 12GB</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/gc5.png" class="card-img-top w-75 mx-auto" alt="Gabinetes">
+                </div>
+                
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">GTX 1050 Ti </h5>
+                    <p class="card-text">GEFORCE GTX 1050 Ti 4GB</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+            <div class="card mb-3 shadow" style="width: 18rem;">
+                <div class="img-container">
+                    <img src="./img/gc6.png" class="card-img-top w-75 mx-auto" alt="Gabinetes">
+                </div>
+                <div class="card-body text-start position-relative">
+                    <h5 class="card-title">GTX 1660 Ti </h5>
+                    <p class="card-text">GEFORCE GTX 1660 Ti 6GB</p>
+                    <i class="fa-solid fa-circle-check position-absolute" style="color:green; bottom: 65px; left:235px;"></i>
+                </div>
+                <a href="#" class="btn btn-primary container-fluid"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px;">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg> Agregar </a>
+            </div>
+        </div> 
+        <div class="container my-5 py-3">
+            <ul class="pagination justify-content-center">
+                <li class="page-item" id="pager-left">
+                    <a class="page-link" href="#">
+                        <span>&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" id="page-1" href="index.html">1</a></li>
+                <li class="page-item active"><a class="page-link" id="page-2" href="./pageTwo.html">2</a></li>
+                <li class="page-item"><a class="page-link" id="page-3" href="./pageThree.html">3</a></li>
+                <li class="page-item "><a class="page-link" id="page-4" href="./pageFour.html">4</a></li>
+                <li class="page-item" id="pager-right">
+                    <a class="page-link" href="#">
+                        <span>&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <script>
+        // Toogle .show
+        const menu = document.querySelector('#collapse-menu');
+        const width = window.innerWidth;
+        if (width >= 576) {
+                menu.classList.add('show')
+            }
+        window.addEventListener('resize', () =>{
+            if (width >= 576) {
+                menu.classList.add('show')
+            }
+            if (width < 576) {
+                menu.classList.remove('show')
+            }
+        })
+        
+        // Pagination
+        const pagerLeft = document.getElementById('pager-left')
+        const page1 = document.getElementById('page-1')
+        const page2 = document.getElementById('page-2')
+        const page3 = document.getElementById('page-3')
+        const page4 = document.getElementById('page-4')
+        const pagerRight= document.getElementById('pager-right')
+
+        page1.addEventListener('click', () => {
+            page1.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>

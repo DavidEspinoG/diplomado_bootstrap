@@ -26,8 +26,16 @@
                     <div class="d-flex flex-column flex-sm-row justify-content-sm-evenly gap-sm-3 align-content-sm-center">
                         <a href="">Inicio</a> 
                         <a href="">Catálogo</a>
-                        <div class="dropdown mb-0">
-                            <a href="" class="dropdown-toggle" data-bs-toggle="dropdown">Categorías</a>
+                        <div class="dropdown mb-0" id="my-dropdown">
+                            <a href="#secondary-collapse" class="dropdown-toggle" data-bs-toggle="collapse">Categorías</a>
+                            <div class="collapse bg-white rounded " id="secondary-collapse">
+                                <a href="" class="dropdown-item">CPU</a>
+                                <a href="" class="dropdown-item">RAM</a>
+                                <a href="" class="dropdown-item">Tarjetas gráficas</a>
+                                <a href="" class="dropdown-item">Placas base</a>
+                                <a href="" class="dropdown-item">Gabinetes</a>
+                                <a href="" class="dropdown-item">Fuentes de poder</a>
+                            </div>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item">CPU</a></li>
                                 <li><a class="dropdown-item">RAM</a></li>
@@ -278,6 +286,6 @@
                 </div>
             </div>
         </footer>
-
+        <script src="./scripts.js"></script>
 </body>
 </html>
